@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="formulario">
+        <h1>Cadastro</h1>
+
+        <form id="formCadastro">
+
+            <label for="nome">Nome Completo</label>
+            <input 
+                type="text" 
+                id="nome" 
+                placeholder="Digite seu nome completo"
+                required
+            >
+
+            <label for="email">E-mail Institucional</label>
+            <input 
+                type="email" 
+                id="email" 
+                placeholder="Digite seu e-mail"
+                required
+            >
+
+            <label for="senha">Senha de Acesso</label>
+            <input 
+                type="password" 
+                id="senha" 
+                placeholder="Digite sua senha"
+                minlength="6"
+                required
+            >
+
+            <label for="confirmaSenha">Confirmação de Senha</label>
+            <input 
+                type="password" 
+                id="confirmaSenha" 
+                placeholder="Digite a senha novamente"
+                required
+            >
+
+            <label for="perfil">Perfil Técnico</label>
+            <select id="perfil" required>
+                <option value="">Selecione uma área</option>
+                <option value="Redes">Redes</option>
+                <option value="Desenvolvimento">Desenvolvimento</option>
+                <option value="Suporte">Suporte</option>
+            </select>
+
+            <div class="termos">
+                <input type="checkbox" id="termos" required>
+                <label for="termos">Aceito os termos de uso</label>
+            </div>
+
+            <button type="submit">Cadastrar</button>
+
+            <p id="mensagem"></p>
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
